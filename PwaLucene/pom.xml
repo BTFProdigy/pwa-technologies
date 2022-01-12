@@ -48,26 +48,16 @@
             	<phase>compile</phase>           		
            		<configuration>
            			<tasks>                			  												
-						<javac srcdir="${basedir}/src/main/java/"
-    	         			destdir="${basedir}/src/main/java/"      	         
-    	         			fork="true"    	        
-    	         			source="1.5"
-    	         			target="1.5"
-    	         			debug="true">
+						<javac srcdir="${basedir}/src/main/java/" destdir="${basedir}/src/main/java/" fork="true" source="1.5" target="1.5" debug="true">
     						<classpath>
-    							<pathelement path = "${basedir}/src/main/java/" />
+    							<pathelement path="${basedir}/src/main/java/"/>
 								<path refid="maven.compile.classpath"/>
 							</classpath>
     					</javac>
     					
-    					<javac srcdir="${basedir}/src/test/java/"
-    	         			destdir="${basedir}/src/test/java/"      	         
-    	         			fork="true"    	        
-    	         			source="1.5"
-    	         			target="1.5"
-    	         			debug="true">
+    					<javac srcdir="${basedir}/src/test/java/" destdir="${basedir}/src/test/java/" fork="true" source="1.5" target="1.5" debug="true">
     						<classpath>
-    							<pathelement path = "${basedir}/src/test/java/" />
+    							<pathelement path="${basedir}/src/test/java/"/>
 								<path refid="maven.compile.classpath"/>
 							</classpath>
     					</javac>
@@ -140,7 +130,7 @@
       <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.2</version>
+      <version>4.13.2</version>
     </dependency>
 
     <dependency>
