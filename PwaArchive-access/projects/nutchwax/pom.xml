@@ -99,7 +99,7 @@
             <name>Doug Cutting</name>
             <id>cutting</id>
             <email>doug at nutch dot org</email>
-            <organization />
+            <organization/>
             <url>http://nutch.org</url>
             <timezone>-8</timezone>
         </developer>
@@ -144,7 +144,7 @@
             <timezone>-8</timezone>
         </developer>
     </developers>
-    <contributors />
+    <contributors/>
 
     <dependencies>
         <dependency>
@@ -163,7 +163,7 @@
     <dependency>
         <groupId>commons-httpclient</groupId>
         <artifactId>commons-httpclient</artifactId>
-        <version>3.0.1</version>
+        <version>3.1</version>
     </dependency>
     <dependency>
         <groupId>commons-cli</groupId>
