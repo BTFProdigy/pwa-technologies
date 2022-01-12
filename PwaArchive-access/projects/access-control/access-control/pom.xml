@@ -4,7 +4,7 @@
   <artifactId>access-control</artifactId>
   <packaging>jar</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <description></description>
+  <description/>
   <name>Access-Control: core library and client</name>
   
   <parent>
@@ -27,7 +27,7 @@
   </build>
   <repositories>
     <repository>
-      <releases />
+      <releases/>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
@@ -35,7 +35,7 @@
       <url>http://builds.archive.org:8080/maven2</url>
     </repository>
     <repository>
-      <releases />
+      <releases/>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
@@ -54,7 +54,7 @@
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
       <artifactId>xstream</artifactId>
-      <version>1.2.2</version>
+      <version>1.4.18</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.jettison</groupId>
