@@ -99,7 +99,7 @@
             <name>Doug Cutting</name>
             <id>cutting</id>
             <email>doug at nutch dot org</email>
-            <organization />
+            <organization/>
             <url>http://nutch.org</url>
             <timezone>-8</timezone>
         </developer>
@@ -144,7 +144,7 @@
             <timezone>-8</timezone>
         </developer>
     </developers>
-    <contributors />
+    <contributors/>
 
     <dependencies>
         <dependency>
@@ -174,7 +174,7 @@
     <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>servlet-api</artifactId>
-        <version>2.4</version>
+        <version>2.5</version>
     </dependency>
 <!--
     <dependency>
