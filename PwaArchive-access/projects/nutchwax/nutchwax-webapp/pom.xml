@@ -44,7 +44,7 @@
       <dependency>
           <groupId>org.slf4j</groupId>
           <artifactId>slf4j-api</artifactId>
-          <version>1.7.5</version>
+          <version>1.7.32</version>
       </dependency>
       <dependency>
           <groupId>org.slf4j</groupId>
@@ -62,65 +62,60 @@
             <phase>compile</phase>
             <configuration>
               <tasks>
-                <property name="nutch" value="../nutchwax-thirdparty/nutch" />
-                <copy todir="target/${artifactId}-${project.version}/WEB-INF/lib" 
-                        overwrite="true">
-                    <fileset dir="${nutch}/lib" >
-                        <include name="xerces*jar" />
-                        <include name="pwalucene*jar" />
-                        <include name="lucene-misc*jar" />
-                        <include name="log4j*jar" />
-                        <include name="taglibs-i18n*jar" />
-            			<include name="taglibs-log*jar" />
-                        <include name="commons-lang*jar" />
-                        <include name="commons-logging*jar" />
-                        <include name="hadoop*jar" />
-                        <include name="dom4j*jar" />
-                        <include name="commons-*jar" />
-                    </fileset>
-                    <fileset dir="${nutch}/build" >
-                        <include name="nutch*jar" />
-                    </fileset>
-                </copy>
-                <copy todir="target/${artifactId}-${project.version}/WEB-INF/classes/plugins" 
-                        overwrite="true">
-                    <fileset dir="${nutch}/build/plugins" >
-                        <include name="analysis-*/**" />
-                        <include name="clustering-*/**" />
-                        <include name="language-*/**" />
-                        <include name="lib-lucene-*/**" />
-                        <include name="lib-log4j-*/**" />
-                        <include name="lib-regex-*/**" />
-                        <include name="microformats-*/**" />
-                        <include name="nutch-*/**" />
-                        <include name="query-*/**" />
-                        <include name="urlfilter-*/**" />
-                        <include name="urlnormalizer-*/**" />
-                        <include name="summary-*/**" />
-                        <include name="urlfilter-*/**" />
-                    </fileset>
-                </copy>
-                <copy todir="target/${artifactId}-${project.version}/WEB-INF/classes/wax-plugins" 
-                        overwrite="true">
-                    <fileset dir="../nutchwax-plugins/target/wax-plugins" />
-                </copy>
-                <copy todir="target/${artifactId}-${project.version}/WEB-INF/classes" 
-                        overwrite="false">
-                    <fileset dir="${nutch}/conf" >
-                        <exclude name="**/*.template"/>
-                        <exclude name="**/log4j.properties"/>
-                    </fileset>
-                    <fileset dir="../conf" >
-                        <exclude name="**/*.template"/>
-                        <exclude name="**/log4j.properties"/>
-                    </fileset>
-                    <fileset dir="${nutch}/src/web/locale" />
-                </copy>
-                <copy todir="target/${artifactId}-${project.version}/WEB-INF/" 
-                        overwrite="true">
+                <property name="nutch" value="../nutchwax-thirdparty/nutch"/>
+                <copy todir="target/${artifactId}-${project.version}/WEB-INF/lib" overwrite="true">
                     <fileset dir="${nutch}/lib">
-                        <include name="taglibs-i18n*tld" />
-			<include name="taglibs-log*tld" />
+                        <include name="xerces*jar"/>
+                        <include name="pwalucene*jar"/>
+                        <include name="lucene-misc*jar"/>
+                        <include name="log4j*jar"/>
+                        <include name="taglibs-i18n*jar"/>
+            			<include name="taglibs-log*jar"/>
+                        <include name="commons-lang*jar"/>
+                        <include name="commons-logging*jar"/>
+                        <include name="hadoop*jar"/>
+                        <include name="dom4j*jar"/>
+                        <include name="commons-*jar"/>
+                    </fileset>
+                    <fileset dir="${nutch}/build">
+                        <include name="nutch*jar"/>
+                    </fileset>
+                </copy>
+                <copy todir="target/${artifactId}-${project.version}/WEB-INF/classes/plugins" overwrite="true">
+                    <fileset dir="${nutch}/build/plugins">
+                        <include name="analysis-*/**"/>
+                        <include name="clustering-*/**"/>
+                        <include name="language-*/**"/>
+                        <include name="lib-lucene-*/**"/>
+                        <include name="lib-log4j-*/**"/>
+                        <include name="lib-regex-*/**"/>
+                        <include name="microformats-*/**"/>
+                        <include name="nutch-*/**"/>
+                        <include name="query-*/**"/>
+                        <include name="urlfilter-*/**"/>
+                        <include name="urlnormalizer-*/**"/>
+                        <include name="summary-*/**"/>
+                        <include name="urlfilter-*/**"/>
+                    </fileset>
+                </copy>
+                <copy todir="target/${artifactId}-${project.version}/WEB-INF/classes/wax-plugins" overwrite="true">
+                    <fileset dir="../nutchwax-plugins/target/wax-plugins"/>
+                </copy>
+                <copy todir="target/${artifactId}-${project.version}/WEB-INF/classes" overwrite="false">
+                    <fileset dir="${nutch}/conf">
+                        <exclude name="**/*.template"/>
+                        <exclude name="**/log4j.properties"/>
+                    </fileset>
+                    <fileset dir="../conf">
+                        <exclude name="**/*.template"/>
+                        <exclude name="**/log4j.properties"/>
+                    </fileset>
+                    <fileset dir="${nutch}/src/web/locale"/>
+                </copy>
+                <copy todir="target/${artifactId}-${project.version}/WEB-INF/" overwrite="true">
+                    <fileset dir="${nutch}/lib">
+                        <include name="taglibs-i18n*tld"/>
+			<include name="taglibs-log*tld"/>
                     </fileset>
                 </copy>
               </tasks>
