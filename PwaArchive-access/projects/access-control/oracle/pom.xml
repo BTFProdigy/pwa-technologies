@@ -10,7 +10,7 @@
   <packaging>war</packaging>
   <name>Access-Control: Oracle Webapp</name>
   <version>0.0.1-SNAPSHOT</version>
-  <description></description>
+  <description/>
   <build>
     <extensions>
       <extension>
@@ -52,7 +52,7 @@
   </build>
   <repositories>
     <repository>
-      <releases />
+      <releases/>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
@@ -60,7 +60,7 @@
       <url>http://builds.archive.org:8080/maven2</url>
     </repository>
     <repository>
-      <releases />
+      <releases/>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
@@ -122,7 +122,7 @@
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
       <artifactId>xstream</artifactId>
-      <version>1.2.2</version>
+      <version>1.4.21</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.jettison</groupId>
